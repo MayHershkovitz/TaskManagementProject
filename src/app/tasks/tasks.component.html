@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="container_center">
+    <input class="task_title" type="text" id="task_title" placeholder="Title" [(ngModel)]="task_title">
+  </div>
+
+  <ul *ngFor="let sub_task of sub_tasks">
+    <li>
+      {{sub_task}}
+    </li>
+  </ul>
+
+  <div class="new_sub_task">
+    <input type="text" id="add_sub_task" placeholder="New" [(ngModel)]="new_sub_task">
+    <button (click)="adding()">Add</button>
+  </div>
+</div>
