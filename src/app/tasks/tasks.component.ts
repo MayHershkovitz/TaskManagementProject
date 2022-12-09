@@ -16,8 +16,6 @@ export class TasksComponent {
       this.sub_tasks.push(this.new_sub_task)
       this.new_sub_task = ""
     }
-
-    console.log("hello");
   }
 
 }
